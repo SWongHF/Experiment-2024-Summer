@@ -1,1 +1,0 @@
-{"loss": 0.7205663323402405, "weight_loss": 4.4236907958984375, "quantized_loss": 0.7975651621818542, "batch_gradient": 0.0, "_timestamp": 1720597609.3072724, "_runtime": 10.525465488433838, "_step": 149, "_wandb": {"runtime": 9}}

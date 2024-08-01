@@ -51,8 +51,8 @@
 \ProvidesPackage{aistats2023}[2023/08/07 AISTATS2023 submission/camera-ready style file]
 
 \newcommand{\@conferenceordinal}{26\textsuperscript{th}}
-\newcommand{\@conferenceyear}{2023}
-\newcommand{\@conferencelocation}{Valencia, Spain}
+\newcommand{\@conferenceyear}{2024}
+\newcommand{\@conferencelocation}{The Chinese University of Hong Kong, Hong Kong}
 \newcommand{\@conferencevolume}{206}  % Assigned by JMLR
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,19 +62,20 @@
 % Create acknowledgments -- only if the option 'final' is activated
 \providecommand{\acknowledgments}[1]{}
 \newcommand{\ackaccepted}[1]{%
-\subsubsection*{Acknowledgments} #1
+    \subsubsection*{Acknowledgments} #1
 }
 
 \DeclareOption{accepted}{\renewcommand{\statePaper}{\acceptedPaper}%
-                         \renewcommand{\Notice@String}{\AISTATS@appearing}%
-                         \renewcommand{\acknowledgments}{\ackaccepted}}
+    \renewcommand{\Notice@String}{\USRI@appearing}%
+    \renewcommand{\acknowledgments}{\ackaccepted}}
 
 \newcommand{\statePaper}{0}
 \newcommand{\acceptedPaper}{1}
 \newcommand{\Notice@String}{Preliminary work. Under review by AISTATS \@conferenceyear. Do not distribute.}
 \newcommand{\AISTATS@appearing}{Proceedings of the \@conferenceordinal\,International Conference on Artificial
-  Intelligence and Statistics (AISTATS) \@conferenceyear,  \@conferencelocation\@. PMLR: Volume  \@conferencevolume. Copyright
-  \@conferenceyear\/ by the author(s).}
+    Intelligence and Statistics (AISTATS) \@conferenceyear,  \@conferencelocation\@. PMLR: Volume  \@conferencevolume. Copyright
+    \@conferenceyear\/ by the author(s).}
+\newcommand{\USRI@appearing}{Undergraduate Summer Research Internship \@conferenceyear,  \@conferencelocation.}
 
 \ProcessOptions\relax
 
@@ -111,28 +112,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\ftype@copyrightbox{8}
 \def\@copyrightspace{
-% Create a float object positioned at the bottom of the column.  Note
-% that because of the mystical nature of floats, this has to be called
-% before the first column is populated with text (e.g., from the title
-% or abstract blocks).  Otherwise, the text will force the float to
-% the next column.  -- TDRL.
-\@float{copyrightbox}[b]
-\begin{center}
-\setlength{\unitlength}{1pc}
-\begin{picture}(20,2.5)
-% Create a line separating the main text from the note block.
-% 4.818pc==0.8in.
-\put(0,3.5){\line(1,0){4.818}}
-% Insert the text string itself.  Note that the string has to be
-% enclosed in a parbox -- the \put call needs a box object to
-% position.  Without the parbox, the text gets splattered across the
-% bottom of the page semi-randomly.  The 19.75pc distance seems to be
-% the width of the column, though I can't find an appropriate distance
-% variable to substitute here.  -- TDRL.
-\put(0,0){\parbox[b]{19.75pc}{\small \Notice@String}}
-\end{picture}
-\end{center}
-\end@float}
+    % Create a float object positioned at the bottom of the column.  Note
+    % that because of the mystical nature of floats, this has to be called
+    % before the first column is populated with text (e.g., from the title
+    % or abstract blocks).  Otherwise, the text will force the float to
+    % the next column.  -- TDRL.
+    \@float{copyrightbox}[b]
+    \begin{center}
+        \setlength{\unitlength}{1pc}
+        \begin{picture}(20,1.5)
+            % Create a line separating the main text from the note block.
+            % 4.818pc==0.8in.
+            \put(0,2.5){\line(1,0){9.636}}
+            % Insert the text string itself.  Note that the string has to be
+            % enclosed in a parbox -- the \put call needs a box object to
+            % position.  Without the parbox, the text gets splattered across the
+            % bottom of the page semi-randomly.  The 19.75pc distance seems to be
+            % the width of the column, though I can't find an appropriate distance
+            % variable to substitute here.  -- TDRL.
+            \put(0,0){\parbox[b]{19.75pc}{\small \Notice@String}}
+        \end{picture}
+    \end{center}
+    \end@float}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -166,222 +167,222 @@
 
 \long\def\aistatstitle#1{
 
-   %\renewcommand{\headrulewidth}{0.5pt}
+    %\renewcommand{\headrulewidth}{0.5pt}
 
-   \gdef\@runningheadingerrortitle{0}
+    \gdef\@runningheadingerrortitle{0}
 
-   % If paper is under review print this as headings
+    % If paper is under review print this as headings
 
-   \ifnum\statePaper=0
-    {
-     \gdef\@runningtitle{Manuscript under review by AISTATS \@conferenceyear}
-    }
-   \fi
-
-   % If the paper is accepted, print the title or the running title as heading.
-
-   \ifnum\statePaper=1
-   {
-   \ifx\undefined\@runningtitle
-    {
-    \gdef\@runningtitle{#1}
-    }
-   \fi
-   }
-   \fi
-
-   \ifnum\@runningheadingerrortitle=0
-         {
-         \global\setbox\titrun=\vbox{\small\bfseries\@runningtitle}%
-         \ifdim\wd\titrun>\textwidth%
-            {\gdef\@runningheadingerrortitle{2}
-             \gdef\@messagetitle{Running heading title too long}
-            }%
-         \else\ifdim\ht\titrun>10pt
-              {\gdef\@runningheadingerrortitle{3}
-              \gdef\@messagetitle{Running heading title breaks the line}
-              }%
-              \fi
-          \fi
-         }
+    \ifnum\statePaper=0
+        {
+        \gdef\@runningtitle{Manuscript under review by AISTATS \@conferenceyear}
+        }
     \fi
 
-   \ifnum\@runningheadingerrortitle>0
-     {
+    % If the paper is accepted, print the title or the running title as heading.
+
+    \ifnum\statePaper=1
+        {
+        \ifx\undefined\@runningtitle
+            {
+                \gdef\@runningtitle{#1}
+            }
+        \fi
+        }
+    \fi
+
+    \ifnum\@runningheadingerrortitle=0
+        {
+        \global\setbox\titrun=\vbox{\small\bfseries\@runningtitle}%
+        \ifdim\wd\titrun>\textwidth%
+            {\gdef\@runningheadingerrortitle{2}
+                \gdef\@messagetitle{Running heading title too long}
+            }%
+        \else\ifdim\ht\titrun>10pt
+                {\gdef\@runningheadingerrortitle{3}
+                \gdef\@messagetitle{Running heading title breaks the line}
+                }%
+            \fi
+        \fi
+        }
+    \fi
+
+    \ifnum\@runningheadingerrortitle>0
+        {
         \fancyhead[CE]{\small\bfseries\@messagetitle}
         \ifnum\@runningheadingerrortitle>1
-           \typeout{}%
-           \typeout{}%
-           \typeout{*******************************************************}%
-           \typeout{Running heading title exceeds size limitations for running head.}%
-           \typeout{Please supply a shorter form for the running head}
-           \typeout{with \string\runningtitle{...}\space just after \string\begin{document}}%
-           \typeout{*******************************************************}%
-           \typeout{}%
-           \typeout{}%
+            \typeout{}%
+            \typeout{}%
+            \typeout{*******************************************************}%
+            \typeout{Running heading title exceeds size limitations for running head.}%
+            \typeout{Please supply a shorter form for the running head}
+            \typeout{with \string\runningtitle{...}\space just after \string\begin{document}}%
+            \typeout{*******************************************************}%
+            \typeout{}%
+            \typeout{}%
         \fi
-     }
-  \else
-     {
-          \fancyhead[CE]{\small\bfseries\@runningtitle}
-     }
-  \fi
+        }
+    \else
+        {
+            \fancyhead[CE]{\small\bfseries\@runningtitle}
+        }
+    \fi
 
-  \hsize\textwidth
-  \linewidth\hsize \toptitlebar {\centering
-  {\Large\bfseries #1 \par}}
- \bottomtitlebar \vskip 0.2in plus 1fil minus 0.1in
+    \hsize\textwidth
+    \linewidth\hsize \toptitlebar {\centering
+        {\Large\bfseries #1 \par}}
+    \bottomtitlebar \vskip 0.2in plus 1fil minus 0.1in
 }
 
 \long\def\aistatsauthor#1{
 
-   \gdef\@runningheadingerrorauthor{0}
+    \gdef\@runningheadingerrorauthor{0}
 
-   % If the paper is under review, print this message as heading.
+    % If the paper is under review, print this message as heading.
 
-   \ifnum\statePaper=0
-    {
-     \gdef\@runningauthor{Manuscript under review by AISTATS \@conferenceyear}
-    }
-   \fi
+    \ifnum\statePaper=0
+        {
+        \gdef\@runningauthor{Manuscript under review by AISTATS \@conferenceyear}
+        }
+    \fi
 
-   % If the paper is accepted, print the author names or runningauthor as heading.
+    % If the paper is accepted, print the author names or runningauthor as heading.
 
-   \ifnum\statePaper=1
-   {
-   \ifx\undefined\@runningauthor%
-    {
-   \gdef\@runningauthor{\def\and{\unskip{,}\enspace}\def\And{\unskip{,}\enspace}\def\AND{\unskip{,}\enspace}
-   #1}
-    }
-   \fi
-    }
-   \fi
+    \ifnum\statePaper=1
+        {
+        \ifx\undefined\@runningauthor%
+            {
+                \gdef\@runningauthor{\def\and{\unskip{,}\enspace}\def\And{\unskip{,}\enspace}\def\AND{\unskip{,}\enspace}
+                    #1}
+            }
+        \fi
+        }
+    \fi
 
-  \ifnum\@runningheadingerrorauthor=0
-      {
-      \global\setbox\autrun=\vbox{\small\bfseries\@runningauthor}
-      \ifdim\wd\autrun>\textwidth%
+    \ifnum\@runningheadingerrorauthor=0
+        {
+        \global\setbox\autrun=\vbox{\small\bfseries\@runningauthor}
+        \ifdim\wd\autrun>\textwidth%
             {\gdef\@runningheadingerrorauthor{2}
-             \gdef\@messageauthor{Running heading author too long}
+                \gdef\@messageauthor{Running heading author too long}
             }%
-         \else\ifdim\ht\autrun>10pt
-              {\gdef\@runningheadingerrorauthor{3}
-              \gdef\@messageauthor{Running heading author breaks the line}
-              }%
-              \fi
-          \fi
-      }
-  \fi
+        \else\ifdim\ht\autrun>10pt
+                {\gdef\@runningheadingerrorauthor{3}
+                \gdef\@messageauthor{Running heading author breaks the line}
+                }%
+            \fi
+        \fi
+        }
+    \fi
 
-  \ifnum\@runningheadingerrorauthor>0
-     {
-       \fancyhead[CO]{\small\bfseries\@messageauthor}
-       \ifnum\@runningheadingerrorauthor>1
-           \typeout{}%
-           \typeout{}%
-           \typeout{*******************************************************}%
-           \typeout{Running heading author exceeds size limitations for running head.}%
-           \typeout{Please supply a shorter form for the running head}
-           \typeout{with \string\runningauthor{...}\space just after \string\begin{document}}%
-           \typeout{*******************************************************}%
-           \typeout{}%
-           \typeout{}%
-      \fi
-     }
-  \else
-     {
-     \fancyhead[CO]{\small\bfseries\@runningauthor}
-     }
-  \fi
+    \ifnum\@runningheadingerrorauthor>0
+        {
+        \fancyhead[CO]{\small\bfseries\@messageauthor}
+        \ifnum\@runningheadingerrorauthor>1
+            \typeout{}%
+            \typeout{}%
+            \typeout{*******************************************************}%
+            \typeout{Running heading author exceeds size limitations for running head.}%
+            \typeout{Please supply a shorter form for the running head}
+            \typeout{with \string\runningauthor{...}\space just after \string\begin{document}}%
+            \typeout{*******************************************************}%
+            \typeout{}%
+            \typeout{}%
+        \fi
+        }
+    \else
+        {
+            \fancyhead[CO]{\small\bfseries\@runningauthor}
+        }
+    \fi
 
 
     \ifnum\statePaper=0
-    {
+        {
         {\def\and{\unskip\enspace{\rm and}\enspace}%
-        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
-                \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}%
-        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
+                \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+                    \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}%
+                        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
                     \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}
-        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
+                        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
                     \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}
-            \hbox to \linewidth\bgroup \hfil\hfil
-            \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries Anonymous Author
-                                \end{tabular}
-            \hss\egroup
-            \hfil\hfil\egroup}
-    }
-    \else
-    {
-        {\def\and{\unskip\enspace{\rm and}\enspace}%
-        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
-                \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}%
-        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
+                        \hbox to \linewidth\bgroup \hfil\hfil
+                        \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries Anonymous Author
+                                                \end{tabular}
+                        \hss\egroup
+                        \hfil\hfil\egroup}
+                        }
+                        \else
+                        {
+                        {\def\and{\unskip\enspace{\rm and}\enspace}%
+                        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+                    \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}%
+                        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
                     \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}
-        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
+                        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
                     \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}
-            \hbox to \linewidth\bgroup \hfil\hfil
-            \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries #1
-                                \end{tabular}
-            \hss\egroup
-            \hfil\hfil\egroup}
-    }
-   \fi
-}
+                        \hbox to \linewidth\bgroup \hfil\hfil
+                        \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries #1
+                                                \end{tabular}
+                        \hss\egroup
+                        \hfil\hfil\egroup}
+                        }
+                        \fi
+                        }
 
 
 
-\long\def\aistatsaddress#1{
-     \ifnum\statePaper=0
-    {
-        {\def\and{\unskip\enspace{\rm and}\enspace}%
-        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
-                \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} }%
-        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
+                        \long\def\aistatsaddress#1{
+                        \ifnum\statePaper=0
+                        {
+                        {\def\and{\unskip\enspace{\rm and}\enspace}%
+                        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+                    \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} }%
+                        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
                     \hbox to 0pt  \bgroup \hss \begin{tabular}[t]{c}}
-        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth \bgroup \hfil\hfil
+                        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth \bgroup \hfil\hfil
                     \hbox to 0pt  \bgroup \hss\begin{tabular}[t]{c}\bfseries}
-            \hbox to \linewidth\bgroup \hfil\hfil
-            \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}
-            Anonymous Institution
-            \end{tabular}
-            \hss\egroup
-            \hfil\hfil\egroup}
+                        \hbox to \linewidth\bgroup \hfil\hfil
+                        \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}
+                                                    Anonymous Institution
+                                                \end{tabular}
+                        \hss\egroup
+                        \hfil\hfil\egroup}
+                        \vskip 0.3in plus 2fil minus 0.1in
+                        }
+                        \else
+                        {
+                        {\def\and{\unskip\enspace{\rm and}\enspace}%
+                        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+                    \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} }%
+                        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth\bgroup \hfil\hfil
+                    \hbox to 0pt  \bgroup \hss \begin{tabular}[t]{c}}
+                        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
+                    \vskip 0.25in plus 1fil minus 0.125in
+                    \hbox to \linewidth \bgroup \hfil\hfil
+                    \hbox to 0pt  \bgroup \hss\begin{tabular}[t]{c}\bfseries}
+                \hbox to \linewidth\bgroup \hfil\hfil
+                \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} #1
+                \end{tabular}
+                \hss\egroup
+                \hfil\hfil\egroup}
         \vskip 0.3in plus 2fil minus 0.1in
-    }
-    \else
-    {
-        {\def\and{\unskip\enspace{\rm and}\enspace}%
-        \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
-                \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} }%
-        \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth\bgroup \hfil\hfil
-                    \hbox to 0pt  \bgroup \hss \begin{tabular}[t]{c}}
-        \def\ANDD{\end{tabular}\hss\egroup \hfil\hfil\egroup
-                \vskip 0.25in plus 1fil minus 0.125in
-                \hbox to \linewidth \bgroup \hfil\hfil
-                    \hbox to 0pt  \bgroup \hss\begin{tabular}[t]{c}\bfseries}
-            \hbox to \linewidth\bgroup \hfil\hfil
-            \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c} #1
-                                \end{tabular}
-        \hss\egroup
-        \hfil\hfil\egroup}
-    \vskip 0.3in plus 2fil minus 0.1in
-    }
-   \fi
+        }
+    \fi
 }
 
 \renewcommand{\headrulewidth}{0.5pt}
@@ -392,19 +393,19 @@
 
 \renewenvironment{abstract}
 {\@copyrightspace\centerline{\large\bfseries
-Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
+        Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 
 % sections with less space
 \def\section{\@startsection {section}{1}{\z@}{-2.0ex plus
-    -0.5ex minus -.2ex}{1.5ex plus 0.3ex minus .2ex}{\large\bfseries\raggedright}}
+      -0.5ex minus -.2ex}{1.5ex plus 0.3ex minus .2ex}{\large\bfseries\raggedright}}
 \def\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus
-    -0.5ex minus -.2ex}{0.8ex plus .2ex}{\normalsize\bfseries\raggedright}}
+        -0.5ex minus -.2ex}{0.8ex plus .2ex}{\normalsize\bfseries\raggedright}}
 \def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-1.5ex plus
-   -0.5ex minus -.2ex}{0.5ex plus .2ex}{\normalsize\bfseries\raggedright}}
+        -0.5ex minus -.2ex}{0.5ex plus .2ex}{\normalsize\bfseries\raggedright}}
 \def\paragraph{\@startsection{paragraph}{4}{\z@}{1.5ex plus
-   0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
+        0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
 \def\subparagraph{\@startsection{subparagraph}{5}{\z@}{1.5ex plus
-   0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
+        0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
 \def\subsubsubsection{\vskip 5pt{\noindent\normalsize\rm\raggedright}}
 
 
@@ -430,21 +431,21 @@ Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 
 \def\@listi{\leftmargin\leftmargini}
 \def\@listii{\leftmargin\leftmarginii
-   \labelwidth\leftmarginii\advance\labelwidth-\labelsep
-   \topsep 2pt plus 1pt minus 0.5pt
-   \parsep 1pt plus 0.5pt minus 0.5pt
-   \itemsep \parsep}
+    \labelwidth\leftmarginii\advance\labelwidth-\labelsep
+    \topsep 2pt plus 1pt minus 0.5pt
+    \parsep 1pt plus 0.5pt minus 0.5pt
+    \itemsep \parsep}
 \def\@listiii{\leftmargin\leftmarginiii
     \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
     \topsep 1pt plus 0.5pt minus 0.5pt
     \parsep \z@ \partopsep 0.5pt plus 0pt minus 0.5pt
     \itemsep \topsep}
 \def\@listiv{\leftmargin\leftmarginiv
-     \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
+    \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
 \def\@listv{\leftmargin\leftmarginv
-     \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
+    \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
 \def\@listvi{\leftmargin\leftmarginvi
-     \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
+    \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
 
 \abovedisplayskip 7pt plus2pt minus5pt%
 \belowdisplayskip \abovedisplayskip
@@ -465,30 +466,30 @@ Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 \def\Huge{\@setsize\Huge{28pt}\xxvpt\@xxvpt}
 
 \def\toptitlebar{
-\hrule height4pt
-\vskip .25in}
+    \hrule height4pt
+    \vskip .25in}
 
 \def\bottomtitlebar{
-\vskip .25in
-\hrule height1pt
-\vskip .25in}
+    \vskip .25in
+    \hrule height1pt
+    \vskip .25in}
 
 \renewenvironment{thebibliography}[1]
-     {\subsubsection*{\refname}%
-      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
-      \list{\@biblabel{\@arabic\c@enumiv}}%
-           {\settowidth\labelwidth{\@biblabel{#1}}%
-            \leftmargin\labelwidth
-            \advance\leftmargin\labelsep
-            \@openbib@code
-            \usecounter{enumiv}%
-            \let\p@enumiv\@empty
-            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-     {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist}
+{\subsubsection*{\refname}%
+    \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+    \list{\@biblabel{\@arabic\c@enumiv}}%
+    {\settowidth\labelwidth{\@biblabel{#1}}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \@openbib@code
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+    \sloppy
+    \clubpenalty4000
+    \@clubpenalty \clubpenalty
+    \widowpenalty4000%
+    \sfcode`\.\@m}
+{\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+    \endlist}

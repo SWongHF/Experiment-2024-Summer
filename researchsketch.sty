@@ -53,7 +53,7 @@
 \newcommand{\lowersum}[1][f]{L(#1,P) = \sum^n_{i=1} m_i\deltaxi}
 \newcommand{\uppersum}[1][f]{U(#1,P) = \sum^n_{i=1} M_i\deltaxi}
 \newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits}
-
+\newcommand{\argminnl}{\mathop{\mathrm{argmin}}}
 %% Convenience Wrappers %%
 \newcounter{lemmacnt}
 \setcounter{lemmacnt}{0}
@@ -66,6 +66,12 @@
 \newcommand{\assumption}[1]{
     \stepcounter{assumptioncnt}
     \noindent\textbf{Assumption \theassumptioncnt. }#1
+}
+\newcounter{corollarycnt}
+\setcounter{corollarycnt}{0}
+\newcommand{\corollary}[1]{
+    \stepcounter{corollarycnt}
+    \noindent\textbf{Corollary \thecorollarycnt. }#1
 }
 \newcounter{theoremcnt}
 \setcounter{theoremcnt}{0}

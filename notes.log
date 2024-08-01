@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.11)  28 JUL 2024 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.11)  1 AUG 2024 02:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,8 +679,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \c@lemmacnt=\count333
 \c@assumptioncnt=\count334
-\c@theoremcnt=\count335
-\c@definitioncnt=\count336
+\c@corollarycnt=\count335
+\c@theoremcnt=\count336
+\c@definitioncnt=\count337
 ) (notes.aux)
 \openout1 = `notes.aux'.
 
@@ -739,16 +740,16 @@ LaTeX Font Info:    ... okay on input line 13.
 
 (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
+\scratchcounter=\count338
 \scratchdimen=\dimen295
 \scratchbox=\box85
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\nofMPsegments=\count339
+\nofMParguments=\count340
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count340
+\MPscratchCnt=\count341
 \MPscratchDim=\dimen296
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks52
 ) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -781,10 +782,10 @@ Overfull \hbox (2.83514pt too wide) in paragraph at lines 117--118
 
 [3] [4] (notes.aux) ) 
 Here is how much of TeX's memory you used:
- 29793 strings out of 478351
- 602328 string characters out of 2836580
- 940919 words of memory out of 3000000
- 47672 multiletter control sequences out of 15000+600000
+ 29799 strings out of 478351
+ 602411 string characters out of 2836580
+ 940993 words of memory out of 3000000
+ 47678 multiletter control sequences out of 15000+600000
  475169 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,11n,118p,1468b,449s stack positions out of 10000i,1000n,20000p,200000b,80000s

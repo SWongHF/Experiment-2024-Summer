@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.11)  26 JUL 2024 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.11)  1 AUG 2024 01:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,17 +508,16 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@sidenote=\count315
 \@sidenotes@marginfigurebox=\box78
 \@sidenotes@margintablebox=\box79
-) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
-\f@nch@headwidth=\skip59
-\f@nch@O@elh=\skip60
-\f@nch@O@erh=\skip61
-\f@nch@O@olh=\skip62
-\f@nch@O@orh=\skip63
-\f@nch@O@elf=\skip64
-\f@nch@O@erf=\skip65
-\f@nch@O@olf=\skip66
-\f@nch@O@orf=\skip67
+) (fancyhdr.sty
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
 ) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box80
@@ -680,30 +679,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \c@lemmacnt=\count333
 \c@assumptioncnt=\count334
-\c@theoremcnt=\count335
-\c@definitioncnt=\count336
+\c@corollarycnt=\count335
+\c@theoremcnt=\count336
+\c@definitioncnt=\count337
 ) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks51
-\c@algorithm=\count337
+\c@algorithm=\count338
 ) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
 Package: algpseudocode 
  (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count338
-\c@ALG@rem=\count339
-\c@ALG@nested=\count340
+\c@ALG@line=\count339
+\c@ALG@rem=\count340
+\c@ALG@nested=\count341
 \ALG@tlm=\skip72
 \ALG@thistlm=\skip73
-\c@ALG@Lnr=\count341
-\c@ALG@blocknr=\count342
-\c@ALG@storecount=\count343
-\c@ALG@tmpcounter=\count344
+\c@ALG@Lnr=\count342
+\c@ALG@blocknr=\count343
+\c@ALG@storecount=\count344
+\c@ALG@tmpcounter=\count345
 \ALG@tmplength=\skip74
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -765,16 +765,16 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
+\scratchcounter=\count346
 \scratchdimen=\dimen295
 \scratchbox=\box85
-\nofMPsegments=\count346
-\nofMParguments=\count347
+\nofMPsegments=\count347
+\nofMParguments=\count348
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count348
+\MPscratchCnt=\count349
 \MPscratchDim=\dimen296
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks53
 ) (C:\Users\lenovo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -825,10 +825,10 @@ Overfull \hbox (3.63988pt too wide) in paragraph at lines 189--190
 
 [5] (researchtheorems.aux) ) 
 Here is how much of TeX's memory you used:
- 30542 strings out of 478351
- 615928 string characters out of 2836580
- 956178 words of memory out of 3000000
- 48418 multiletter control sequences out of 15000+600000
+ 30514 strings out of 478351
+ 615171 string characters out of 2836580
+ 955247 words of memory out of 3000000
+ 48391 multiletter control sequences out of 15000+600000
  475732 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,11n,118p,639b,941s stack positions out of 10000i,1000n,20000p,200000b,80000s

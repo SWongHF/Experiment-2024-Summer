@@ -1,0 +1,340 @@
+2024-07-30 17:30:32,748 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:30:32,748 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:30:32,748 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:30:32,749 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:30:32,749 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:30:32,749 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:30:32,749 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:30:32,749 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:30:32,750 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173032-b6yidv75\logs\debug.log
+2024-07-30 17:30:32,750 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173032-b6yidv75\logs\debug-internal.log
+2024-07-30 17:30:32,750 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:30:32,750 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'SGDA_0.5', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:30:32,751 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:30:32,751 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:30:32,756 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:30:32,758 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:30:32,773 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:30:32,773 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:30:32,773 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:30:32,874 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:32:03,754 ERROR   MainThread:1936 [wandb_init.py:init():774] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-07-30 17:32:03,820 ERROR   MainThread:1936 [wandb_init.py:init():1199] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-07-30 17:33:25,661 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:33:25,671 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:33:25,671 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:33:25,671 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:33:25,671 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:33:25,672 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:33:25,672 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:33:25,672 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:33:25,672 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:33:25,672 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173325-hbgeg166\logs\debug.log
+2024-07-30 17:33:25,673 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173325-hbgeg166\logs\debug-internal.log
+2024-07-30 17:33:25,673 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:33:25,673 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'SGDA_0.5', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:33:25,673 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:33:25,673 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:33:25,677 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:33:25,678 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:33:25,692 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:33:25,692 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:33:25,692 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:33:25,778 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:33:26,350 WARNING MsgRouterThr:1936 [router.py:message_loop():77] message_loop has been closed
+2024-07-30 17:33:26,350 WARNING MsgRouterThr:1936 [router.py:message_loop():77] message_loop has been closed
+2024-07-30 17:33:42,946 WARNING MainThread:1936 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\lib\mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\lib\mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "c:\Users\lenovo\anaconda3\envs\dl\lib\threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-07-30 17:34:34,095 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:34:34,105 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:34:34,106 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:34:34,106 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:34:34,106 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:34:34,106 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:34:34,106 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:34:34,107 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:34:34,107 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:34:34,107 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173434-it6fa6r3\logs\debug.log
+2024-07-30 17:34:34,108 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173434-it6fa6r3\logs\debug-internal.log
+2024-07-30 17:34:34,108 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:34:34,108 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'SGDA_0.5', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:34:34,108 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:34:34,108 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:34:34,114 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:34:34,115 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:34:34,130 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:34:34,131 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:34:34,131 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:34:34,224 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:34:34,931 WARNING MsgRouterThr:1936 [router.py:message_loop():77] message_loop has been closed
+2024-07-30 17:34:34,955 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:34:35,000 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:34:35,000 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:34:41,511 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:34:41,512 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:34:41,512 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:34:41,512 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:34:41,513 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:34:47,626 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:34:47,627 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:34:47,627 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:34:47,628 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:34:47,628 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:34:47,628 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:34:47,629 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:34:47,629 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:34:47,630 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173447-r8ufsq8o\logs\debug.log
+2024-07-30 17:34:47,630 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173447-r8ufsq8o\logs\debug-internal.log
+2024-07-30 17:34:47,631 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:34:47,631 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'SGDA_0.01', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:34:47,631 INFO    MainThread:1936 [wandb_init.py:init():586] re-initializing run, found existing run on stack: it6fa6r3
+2024-07-30 17:34:47,634 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/it6fa6r3
+2024-07-30 17:34:47,635 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:34:47,635 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:34:47,636 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:34:50,589 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:34:50,590 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:34:50,600 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:34:50,658 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:34:50,658 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:34:50,663 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:34:50,664 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:34:50,677 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:34:50,677 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:34:50,677 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:34:50,774 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:34:53,161 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:34:53,205 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:34:53,205 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:34:59,583 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:34:59,583 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:34:59,584 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:34:59,584 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:34:59,584 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:35:05,174 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:35:05,174 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:35:05,175 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:35:05,175 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:35:05,175 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:35:05,176 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:35:05,176 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:35:05,176 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:35:05,177 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173505-dy7bgfw4\logs\debug.log
+2024-07-30 17:35:05,178 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173505-dy7bgfw4\logs\debug-internal.log
+2024-07-30 17:35:05,178 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:35:05,178 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'ASkewSGD_0.5', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:35:05,179 INFO    MainThread:1936 [wandb_init.py:init():586] re-initializing run, found existing run on stack: r8ufsq8o
+2024-07-30 17:35:05,181 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/r8ufsq8o
+2024-07-30 17:35:05,181 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:35:05,182 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:35:05,182 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:35:09,907 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:35:09,908 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:35:09,917 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:35:09,979 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:35:09,979 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:35:09,982 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:35:09,983 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:35:09,992 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:35:09,993 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:35:09,993 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:35:10,066 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:35:11,487 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:35:11,531 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:35:11,531 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:35:18,668 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:35:18,669 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:35:18,669 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:35:18,669 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:35:18,670 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:35:25,555 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/dy7bgfw4
+2024-07-30 17:35:25,557 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:35:25,557 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:35:25,561 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:35:29,065 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:35:29,066 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:35:29,078 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:35:29,148 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:35:29,158 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:35:29,158 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:35:29,158 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:35:29,159 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:35:29,159 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:35:29,159 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:35:29,162 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:35:29,163 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:35:29,163 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173529-hvxbvrf0\logs\debug.log
+2024-07-30 17:35:29,164 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173529-hvxbvrf0\logs\debug-internal.log
+2024-07-30 17:35:29,164 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:35:29,164 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'ASkewSGD_0.5', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:35:29,164 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:35:29,165 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:35:29,169 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:35:29,170 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:35:29,187 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:35:29,187 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:35:29,188 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:35:29,288 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:35:30,618 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:35:30,668 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:35:30,669 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:35:37,820 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:35:37,821 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:35:37,821 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:35:37,821 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:35:37,822 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:35:44,583 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/hvxbvrf0
+2024-07-30 17:35:44,584 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:35:44,585 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:35:44,585 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:35:48,178 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:35:48,179 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:35:48,189 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:35:48,255 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:35:48,264 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:35:48,265 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:35:48,265 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:35:48,265 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:35:48,265 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:35:48,265 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:35:48,266 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:35:48,266 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:35:48,266 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173548-aypruw60\logs\debug.log
+2024-07-30 17:35:48,266 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173548-aypruw60\logs\debug-internal.log
+2024-07-30 17:35:48,267 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:35:48,267 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'SGD', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:35:48,267 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:35:48,267 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:35:48,271 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:35:48,271 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:35:48,282 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:35:48,282 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:35:48,282 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:35:48,367 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:35:49,784 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:35:49,834 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:35:49,835 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:35:56,188 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:35:56,189 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:35:56,189 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:35:56,189 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:35:56,190 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:36:02,103 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/aypruw60
+2024-07-30 17:36:02,103 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:36:02,104 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:36:02,104 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:36:05,496 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:36:05,497 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:36:05,507 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:36:05,574 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:36:05,584 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:36:05,584 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:36:05,584 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:36:05,584 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:36:05,585 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:36:05,585 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:36:05,585 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:36:05,585 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:36:05,586 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173605-jf63plj2\logs\debug.log
+2024-07-30 17:36:05,586 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173605-jf63plj2\logs\debug-internal.log
+2024-07-30 17:36:05,586 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:36:05,586 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'BinaryConnect', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:36:05,586 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:36:05,587 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:36:05,591 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:36:05,592 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:36:05,603 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:36:05,603 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:36:05,603 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:36:05,701 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:36:07,070 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:36:07,145 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:36:07,145 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:36:14,029 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:36:14,030 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:36:14,030 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:36:14,030 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:36:14,032 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:36:20,740 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/jf63plj2
+2024-07-30 17:36:20,741 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:36:20,741 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:36:20,742 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:36:23,920 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:36:23,921 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:36:23,932 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-07-30 17:36:23,999 INFO    MainThread:1936 [wandb_settings.py:_apply_login():1943] Applying login settings: {}
+2024-07-30 17:36:24,007 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-07-30 17:36:24,007 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Configure stats pid to 1936
+2024-07-30 17:36:24,008 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lenovo\.config\wandb\settings
+2024-07-30 17:36:24,008 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\settings
+2024-07-30 17:36:24,008 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:36:24,008 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-30 17:36:24,011 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:36:24,011 INFO    MainThread:1936 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:36:24,012 INFO    MainThread:1936 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173624-kii270z8\logs\debug.log
+2024-07-30 17:36:24,012 INFO    MainThread:1936 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\lenovo\Desktop\CUHK\Research\exp\wandb\run-20240730_173624-kii270z8\logs\debug-internal.log
+2024-07-30 17:36:24,013 INFO    MainThread:1936 [wandb_init.py:init():561] calling init triggers
+2024-07-30 17:36:24,013 INFO    MainThread:1936 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'batch_size': 1000, 'architecture': 'StraightThroughEstimator', 'dataset': 'LogisticRegression', 'epochs': 50}
+2024-07-30 17:36:24,013 INFO    MainThread:1936 [wandb_init.py:init():611] starting backend
+2024-07-30 17:36:24,013 INFO    MainThread:1936 [wandb_init.py:init():615] setting up manager
+2024-07-30 17:36:24,017 INFO    MainThread:1936 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-30 17:36:24,017 INFO    MainThread:1936 [wandb_init.py:init():623] backend started and connected
+2024-07-30 17:36:24,028 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-07-30 17:36:24,029 INFO    MainThread:1936 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-30 17:36:24,029 INFO    MainThread:1936 [wandb_init.py:init():715] updated telemetry
+2024-07-30 17:36:24,105 INFO    MainThread:1936 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-07-30 17:36:25,483 INFO    MainThread:1936 [wandb_run.py:_on_init():2357] communicating current version
+2024-07-30 17:36:25,526 INFO    MainThread:1936 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-30 17:36:25,526 INFO    MainThread:1936 [wandb_init.py:init():799] starting run threads in backend
+2024-07-30 17:36:33,215 INFO    MainThread:1936 [wandb_run.py:_console_start():2335] atexit reg
+2024-07-30 17:36:33,216 INFO    MainThread:1936 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-07-30 17:36:33,216 INFO    MainThread:1936 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-07-30 17:36:33,216 INFO    MainThread:1936 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-07-30 17:36:33,217 INFO    MainThread:1936 [wandb_init.py:init():842] run started, returning control to user process
+2024-07-30 17:36:39,828 INFO    MainThread:1936 [wandb_run.py:_finish():2064] finishing run hokfong-the-chinese-university-of-hong-kong/exp/kii270z8
+2024-07-30 17:36:39,828 INFO    MainThread:1936 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2024-07-30 17:36:39,829 INFO    MainThread:1936 [wandb_run.py:_restore():2287] restore
+2024-07-30 17:36:39,829 INFO    MainThread:1936 [wandb_run.py:_restore():2293] restore done
+2024-07-30 17:36:43,353 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-07-30 17:36:43,354 INFO    MainThread:1936 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-07-30 17:36:43,363 INFO    MainThread:1936 [wandb_run.py:_footer_sync_info():3895] logging synced files
