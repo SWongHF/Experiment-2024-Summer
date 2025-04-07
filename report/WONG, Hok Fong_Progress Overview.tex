@@ -217,18 +217,6 @@ Summing over $T$ epochs, we have
   \sum\limits_{k=0}^{T-1} \frac{\gamma_{k+N}}{2} \lVert \mathbf{v}^{(k+N)}\rVert_2^2 & \leq \ell(\mathbf{w}^{(N)})-\ell(\mathbf{w}^{(N+T)})+TD\varepsilon_1.
 \end{align*}
 
-Further set $\gamma_{k+N}=1/L_\ell$, then
-\begin{align*}
-  \sum\limits_{k=0}^{T-1} \lVert \mathbf{v}^{(k+N)}\rVert_2^2 & \leq \frac{L_\ell}{T}\left[\ell(\mathbf{w}^{(N)})-\ell(\mathbf{w}^{(N+T)})\right]+L_\ell D\varepsilon_1.
-\end{align*}
-
-Hence, when $T\to\infty$, we have
-\begin{align*}
-  \sum\limits_{k=0}^{T-1} \lVert \mathbf{v}^{(k+N)}\rVert_2^2 & \leq L_\ell D\varepsilon_1.
-\end{align*}
-
-As $\varepsilon_1$ can be arbitrary small (almost surely) depending on $N$ (as $N$ is set such that $\sup \text{d}(\mathbf{w}^{(k)})<\varepsilon_1$ for all $k\geq N$),
-$$\sum\limits_{k=0}^{T-1} \lVert \mathbf{v}^{(k+N)}\rVert_2^2 \to 0,\text{ as } T\to \infty.$$
 
 \qed
 
